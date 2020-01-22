@@ -6,9 +6,9 @@ $(function(){
   })
 
   // 範例2
-  $(".tab").click(function(){
-    
-    $(this).siblings().children("span").show();
-  })
+  function begin(){
+    $("[class^=subNav-]").addClass("hide").hide();
+  }
+
 
 })

@@ -115,11 +115,6 @@ div[class^=menu] {
   height: 3.5px;
   background-color: rgb(86, 139, 255);
 } 
-/* .subNav {
-  float: left;
-  overflow: hidden;
-  position: relative;
-} */
 [class ^= subNav-] {
   position: absolute;
   width: 100%;
@@ -133,20 +128,21 @@ div[class^=menu] {
 [class ^= subNav-]>span:hover {
   background-color: rgb(223, 243, 255);
 }
-.subNav-content1>span {
+[class ^= subNav-] span {
+  display: none;
+}
+.subNav-content-1>span {
   width: calc(100% / 4);
-  display: none;
 }
-.subNav-content2>span {
+.subNav-content-2>span {
   width: calc(100% / 3);
-  display: none;
 }
-.subNav-content3>span {
+.subNav-content-3>span {
   width: calc(100% / 2);
-  display: none;
 }
-.subNav-content>span {
-  max-width: 180px; 
+
+.subNav:hover [class^=subNav-] span {
+  display: block;
 }
 
 .content {
