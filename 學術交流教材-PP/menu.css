@@ -10,7 +10,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -63,35 +63,73 @@ a img {
 }
 
 div[class^=menu] {
-  margin: 30px 0;
-  background-color: rgba(214, 214, 214, 0.3);
+  /* margin: 30px 0; */
+  /* background-color: rgba(214, 214, 214, 0.3); */
   clear: both;
 }
-.menu-1 li {
-  float: left;
-  width: 120px;
-  line-height: 35px;
-  background-color: #ffc852;
+
+/* 範例1 */
+.logo {
+  cursor: pointer;
+  display: inline-block;
+}
+.menu-1 {
+  position: relative;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.menu-1:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;   
+}
+.main {
+  /* background-color: rgb(255, 193, 193); */
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+}
+.main>li {
+  min-width: 120px;
   text-align: center;
+  line-height: 35px;
 }
-.title:hover {
-  background-color: #ffb923;
-  /* border-bottom: 3px solid rgb(173, 142, 94); */
+ul li {
+  cursor: pointer;
 }
-
-.sub {
+.main .title:hover {
+  color: rgb(144, 153, 194);
+  font-weight: bolder;
+}
+ul .sub {
   display: none;
+  margin-top: 5px;
+  box-shadow: 2px 2.5px 3px #ddd;
+  background-color: #fff;
 }
-
 .sub>li {
-  background-color: rgb(177, 206, 50);
-  border-bottom: 3px solid rgb(117, 153, 92);
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+}
+.sub>li.active:hover {
+  background-color: #bbb;
+  color: #fff;
+}
+.dt {
+  font-size: 18px;
+  font-weight: 600;
+}
+.dd {
+  padding: 15px 0;
 }
 
 /* menu-2 */
 .mainTab {
   display: flex;
-  padding: 10px 0;
   position: relative;
 }
 .tab {
@@ -107,6 +145,19 @@ div[class^=menu] {
   color: #fff;
 }
 .tab:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  background-color: rgb(86, 139, 255);
+} 
+.active {
+  background-color: rgb(105, 189, 204);
+  color: #fff;
+}
+.active:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -150,9 +201,9 @@ div[class^=menu] {
   padding: 15px;
   line-height: 20px;
   margin: auto;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   clear: both;
 }
-.active {
+/* .active {
   display: block;
-}
+} */

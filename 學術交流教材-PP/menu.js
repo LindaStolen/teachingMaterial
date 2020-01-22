@@ -6,9 +6,16 @@ $(function(){
   })
 
   // 範例2
-  function begin(){
-    $("[class^=subNav-]").addClass("hide").hide();
-  }
+  $("span").click(function(){
+    $(".tab").removeClass("active")
+    $(this).parent().siblings().addClass("active");
+  })
+  $(".tab").click(function(){
+    $(".tab").removeClass("active")
+    $(this).addClass("active");
+  })
+
+  // 範例3
 
 
 })
