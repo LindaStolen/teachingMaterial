@@ -196,6 +196,11 @@ ul .sub {
   display: block;
 }
 
+/* adjust_2 */
+/* .main {
+  display: inline;
+} */
+
 .content {
   width: 95%;
   padding: 15px;
