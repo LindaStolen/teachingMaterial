@@ -1,0 +1,60 @@
+.block {
+  background-color: rgb(255, 219, 189);
+}
+.more {
+  background-color: rgb(187, 187, 187);
+  color: #ddd;
+}
+dt {
+	font-size: 20px;
+	font-weight: 600;
+	padding-left: 5px;
+}
+#example-1 {
+  background-color: #ffe240;
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+  border: 5px solid #c4a001;
+  display: none;
+}
+#example-2 {
+  position: absolute;
+  right: 0;
+  margin: 30px;
+}
+#example-2 > div {
+  background-color: #8bdb49;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #59a82c;
+  /* display: none; */
+}
+ol {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.inline {
+	background-color: #ace6f0;
+}
+.inline ul {
+	background-color: rgba(255, 255, 255, 0.61);
+}
+#example-3 {
+	display: none;
+}
+
+.p {
+	background-color: rgb(199, 0, 0);
+	color: #fff;
+}
+#exmaple-4, #example-5, #example-6 {
+	display: none;
+}
+
+.tagA {
+	background-color: rgb(119, 119, 119);
+	color: #fff;
+}
