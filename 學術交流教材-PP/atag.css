@@ -1,0 +1,9 @@
+.download a, .target a {
+    display: block;
+    margin: 10px 0;
+    width: 280px;
+}
+.d1 {background-color: rgb(231, 175, 175);}
+.d2 {background-color: rgb(255, 194, 124);}
+.d3 {background-color: rgb(255, 228, 110);}
+.d4 {background-color: rgb(139, 194, 151);}

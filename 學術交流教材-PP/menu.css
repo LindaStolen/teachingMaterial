@@ -130,7 +130,7 @@ ul .sub {
 /* menu-2 */
 .mainTab {
   display: flex;
-  position: relative;
+  /* position: relative; */
 }
 .tab {
   min-width: 240px;
