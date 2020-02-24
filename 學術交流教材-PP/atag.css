@@ -3,7 +3,7 @@ div {
     padding-bottom: 15px;
     border-bottom: 1px dashed #333;
 }
-.download ul, .target ul, .href ul {
+.download ul, .target ul, .href ul, .mistake ul {
     list-style: none;
     margin: 15px 0;
 }
@@ -11,16 +11,19 @@ div {
     font-weight: 800;
     color: rgb(196, 118, 3);
     font-size: 20px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 3px rgb(255, 197, 121);
 }
 dd small {
     color: rgb(110, 60, 32);
     font-weight: 650;
+}
+li {
+    padding: 5px 0;
 }
 .href a {
     color: #555;
     text-decoration-line: none;
     font-weight: 600;
 }
-.href li {
-    padding: 5px 0;
-}
+
