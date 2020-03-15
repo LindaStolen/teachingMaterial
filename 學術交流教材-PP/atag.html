@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="zh-CN" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>a標籤</title>
+    <link rel="stylesheet" href="atag.css" />
+  </head>
+  <body>
+		<div class="download">
+			<ul>
+				<li class="title">下載</li>
+				<li><a class="d1" href="https://172.16.131.32:5500/menu_commond.html" download="測試1.html">https://</a></li>
+				<li><a class="d2" href="http://172.16.131.32:5500/menu_commond.html" download="測試2.html">http://</a></li>
+				<li><a class="d3" href="menu_commond.html" download="測試3.html">站內文件檔名</a></li>
+				<li><a class="d4" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" download="測試4.html">https://fonts.googleapis.com/earlyaccess/notosanstc.css</a></li>
+				<li><a class="d6" href="fonts.googleapis.com/earlyaccess/notosanstc.css" download="測試6.html">fonts.googleapis.com/earlyaccess/notosanstc.css</a></li>
+				<li><a class="d7" href="a標籤的測試文件.odt" download="測試7.html">a標籤的測試文件</a></li>
+			</ul>
+			<!-- <a class="d5" href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" download="測試5.html">http://fonts.googleapis.com/earlyaccess/notosanstc.css</a> -->
+		</div>
+		<div class="target">
+			<ul>
+				<li class="title">開啟的地方</li>
+				<li><a class="t1" href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="_self">值＝self【原頁籤開啟】</a></li>
+				<li><a class="t2" href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="_blank">值＝blank【另開新頁籤】</a></li>
+				<li><a class="t4" href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="tab">值＝tab【另開新頁籤】</a></li>
+				<li><a class="t5" href="a標籤的測試文件.odt" target="tab">a標籤的測試文件</a></li>
+				<li><a class="t6" href="需求申請單.pdf" target="tab">需求申請單.pdf</a></li>
+			</ul>
+			<dd>
+				<small>*按照不同檔案形式，開啟方式不同，PDF會在新頁籤中開啟。</small>
+			</dd>
+		</div>
+		<div class="href">
+			<ul>
+				<li class="title">herf還可以放...</li>
+				<li><a href="mailto:plusmeow218@gmail.cpm">send to me!</a></li>
+				<li><a href="tel:+0973881595">call me!</a></li>
+				<li><a href="Javascript:void:(0);">執行js:無動作</a></li>
+				<li><a href="Javascript:alert('執行！');">執行js:alert</a></li>
+			</ul>
+		</div>
+		<div class="mistake">
+			<ul>
+				<li class="title">遇過的a標籤</li>
+				<li><a href="">href=""</a></li>
+				<li><a href="#">href="#"</a></li>
+				<li><a>沒有屬性</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
