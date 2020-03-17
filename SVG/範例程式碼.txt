@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="75" viewbox="0,0,200,150" version="1.1">
+<!-- 	<circle cx="250" cy="100" r="250"/> -->
+  
+  
+  <!--<path d="M50 0 L30 50 L50 100 Z" />--> 
+  
+  
+  <g>
+    <path d="M25 50 L170 50 L170 150 L25 150 Z" fill="#888888"/>
+    <path d="M120 150 L150 150 L150 80 L120 80 Z" fill="#77FFEE"/>
+    <path d="M50 150 L80 150 L80 80 L50 80 Z" fill="#77FFEE"/>
+    <path d="M97.5 0 L200 55 L0 55 Z" fill="#BB5500"/>
+  </g>
+  
+  
+<!--     <path d="M 100 350 q 100 -150 200 0" stroke="blue"
+  stroke-width="5" fill="none" /> -->
+</svg>
