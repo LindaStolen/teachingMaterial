@@ -1,0 +1,10 @@
+circle {
+  fill: brown;
+}
+
+#change:hover {
+  fill: rgb(41, 138, 202);
+}
+#change1:hover {
+  fill: rgb(32, 107, 156);
+}
